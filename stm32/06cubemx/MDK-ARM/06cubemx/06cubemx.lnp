@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"06cubemx\startup_stm32f103xb.o"
+"06cubemx\main.o"
+"06cubemx\gpio.o"
+"06cubemx\stm32f1xx_it.o"
+"06cubemx\stm32f1xx_hal_msp.o"
+"06cubemx\stm32f1xx_hal_gpio_ex.o"
+"06cubemx\stm32f1xx_hal_tim.o"
+"06cubemx\stm32f1xx_hal_tim_ex.o"
+"06cubemx\stm32f1xx_hal.o"
+"06cubemx\stm32f1xx_hal_rcc.o"
+"06cubemx\stm32f1xx_hal_rcc_ex.o"
+"06cubemx\stm32f1xx_hal_gpio.o"
+"06cubemx\stm32f1xx_hal_dma.o"
+"06cubemx\stm32f1xx_hal_cortex.o"
+"06cubemx\stm32f1xx_hal_pwr.o"
+"06cubemx\stm32f1xx_hal_flash.o"
+"06cubemx\stm32f1xx_hal_flash_ex.o"
+"06cubemx\stm32f1xx_hal_exti.o"
+"06cubemx\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "06cubemx\06cubemx.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "06cubemx.map" -o 06cubemx\06cubemx.axf
